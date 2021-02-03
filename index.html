@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/resume/css/main.css">
@@ -7,11 +7,20 @@
     <title>My CV</title>
 </head>
 <body>
+    
     <div class="cv">
         <section>
             <h1>Sergei Gorobtsev</h1>
             <h2>Web developer</h2>
 
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch">
+                  <input type="checkbox" class="theme-switch__checkbox"/>
+                  <div class="slider round"></div>
+                </label>
+                <span class="theme-switch__label">Dark Mode</span>
+              </div>
+              
             <div class="contacts">
                 <div class="contact">
                     <div class="contact__type">
@@ -58,5 +67,6 @@
             <div>JS,CSS,MSSQL,HTML,JavaScript,PhotoShop,Github</div>
         </section>
     </div>
+    <script src="button.js"></script>
 </body>
 </html>
