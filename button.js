@@ -1,6 +1,6 @@
-const checkbox =document.querySelector ('.theme-switch__checkbox');
+const checkbox = document.querySelector('.theme-switch__checkbox');
 
-checkbox.addEventListener('change', function() {
+checkbox.addEventListener('change', function () {
     transition();
     if (this.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -11,7 +11,7 @@ checkbox.addEventListener('change', function() {
 
 function transition() {
     document.documentElement.classList.add('transition');
-    setTimeout(function() {
+    setTimeout(function () {
         document.documentElement.classList.remove('transition');
     }, 1500)
 }
